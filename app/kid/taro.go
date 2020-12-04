@@ -29,7 +29,7 @@ func (k Taro) Display() string {
 
 // Wishlist returns the kid's wishlist.
 func (k Taro) Wishlist() string {
-	return "あか の のりもの がほしい"
+	return `あか の のりもの がほしい`
 }
 
 // CanGet returns gift the kid can get.

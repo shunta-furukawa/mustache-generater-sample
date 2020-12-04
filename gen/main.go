@@ -34,9 +34,9 @@ var (
 	// テンプレ
 	templateBasePath = basePath + "templates/"
 
-	kidTemplatePath      = templateBasePath + "kid.mustache"
-	giftTemplatePath     = templateBasePath + "gift.mustache"
-	cristmasTemplatePath = templateBasePath + "cristmas.mustache"
+	kidTemplatePath       = templateBasePath + "kid.mustache"
+	giftTemplatePath      = templateBasePath + "gift.mustache"
+	christmasTemplatePath = templateBasePath + "christmas.mustache"
 
 	// 出力
 	//outputBasePath                  = basePath + "out/"
@@ -46,7 +46,7 @@ var (
 	giftOutputPath = outputBasePath + "gift/"
 
 	// main 出力用
-	cristmasOutputPath = "../cmd/"
+	christmasOutputPath = "../cmd/"
 )
 
 //go:generate go run main.go
@@ -79,11 +79,11 @@ func main() {
 	generateGifts(giftContainer.Gifts)
 
 	// main.go の生成
-	cristmas := model.Cristmas{}
-	cristmas.Kids = kidContainer.Kids
-	cristmas.Gifts = giftContainer.Gifts
+	christmas := model.Christmas{}
+	christmas.Kids = kidContainer.Kids
+	christmas.Gifts = giftContainer.Gifts
 
-	generateCristmas(cristmas)
+	generateChristmas(christmas)
 }
 
 func generateKids(kids []model.Kid) {
@@ -130,19 +130,19 @@ func generateGifts(gifts []model.Gift) {
 
 }
 
-func generateCristmas(cristmas model.Cristmas) {
+func generateChristmas(christmas model.Christmas) {
 
 	// テンプレートの読み込み
-	cristmasTemplate, err := mustache.ParseFile(cristmasTemplatePath)
+	christmasTemplate, err := mustache.ParseFile(christmasTemplatePath)
 	if !errors.Is(err, nil) {
 		panic(err)
 	}
 
 	r := Renderer{
-		Tmpl: cristmasTemplate,
-		Path: cristmasOutputPath,
+		Tmpl: christmasTemplate,
+		Path: christmasOutputPath,
 	}
-	outputFile(r, "main", cristmas)
+	outputFile(r, "main", christmas)
 
 }
 

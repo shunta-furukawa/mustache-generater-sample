@@ -29,7 +29,7 @@ func (k {{Name}}) Display() string {
 
 // Wishlist returns the kid's wishlist.
 func (k {{Name}}) Wishlist() string {
-	return "{{Wishlist}}"
+	return `{{{Wishlist}}}`
 }
 
 // CanGet returns gift the kid can get.
@@ -37,8 +37,7 @@ func (k {{Name}}) CanGet(sack []gift.Gift) string {
 	gds := make([]string, 0)
 
 	for _, gift := range sack {
-		if true {{#Preferences}}&& gift.Get{{Attribute}}() == "{{Value}}" {{/Preferences}}{{#GenderBiased}}
-&& gift.GetGender() == k.Gender {{/GenderBiased}}{
+		if true {{#Preferences}}&& gift.Get{{Attribute}}() == "{{Value}}" {{/Preferences}}{{#GenderBiased}}&& gift.GetGender() == k.Gender {{/GenderBiased}}{
 			gds = append(gds, gift.Display())
 		}
 	}

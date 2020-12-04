@@ -1,7 +1,7 @@
 package model
 
-// Cristmas is struct for generate wire
-type Cristmas struct {
+// Christmas is struct for generate wire
+type Christmas struct {
 	Kids  []Kid
 	Gifts []Gift
 }

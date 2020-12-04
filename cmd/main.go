@@ -31,7 +31,7 @@ func main() {
 	fmt.Printf("=======================================\n===【:*･ﾟ☆†　Merry Ⅹ’mas　†.｡.:*･ﾟ】=== \n=======================================\n\nよういした プレゼント : \n  - %s\n\n", strings.Join(giftlist, "\n  - "))
 
 	for _, kid := range kids {
-		fmt.Printf("%s\nほしいもの : \n  %s\nもらえるおもちゃ: \n  %s \n",
+		fmt.Printf("%s\nほしいもの : \n  %s\nもらえるおもちゃ: \n  %s \n\n",
 			kid.Display(),
 			kid.Wishlist(),
 			kid.CanGet(sack),

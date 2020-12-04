@@ -13,14 +13,14 @@ func main() {
 	// サンタクロースの袋の中
 	sack := make([]gift.Gift, 0)
 
-	// サンタクロースの袋の中身を詰める
-	sack = append(sack, gift.NewSportsCar())
+	// サンタクロースの袋の中身を詰める{{#Gifts}}
+	sack = append(sack, gift.New{{Name}}()){{/Gifts}}
 
 	// 子供たち
 	kids := make([]kid.Kid, 0)
 
-	// サンタクロースの袋の中身を詰める
-	kids = append(kids, kid.NewTaro())
+	// サンタクロースの袋の中身を詰める{{#Kids}}
+	kids = append(kids, kid.New{{Name}}()){{/Kids}}
 
 	// 子供たちへのプレゼント を 表示
 	giftlist := make([]string, 0)
