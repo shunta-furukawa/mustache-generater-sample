@@ -1,0 +1,46 @@
+gifts: 
+  - name: SportsCar
+    jname: スポーツカー
+    category: のりもの
+    color: あか
+    gender: おとこのこ
+  - name: GabageCollector
+    jname: ゴミしゅうしゅうしゃ
+    category: のりもの
+    color: あお
+    gender: おとこのこ
+  - name: Sword
+    jname: つるぎ
+    category: ぶき
+    color: あお
+    gender: おとこのこ
+  - name: Gun
+    jname: けんじゅう
+    category: ぶき
+    color: くろ
+    gender: おとこのこ
+  - name: TeddyBear
+    jname: くまのぬいぐるみ
+    category: にんぎょう
+    color: ちゃいろ
+    gender: おんなのこ
+  - name: BabyDoll
+    jname: あかちゃんにんぎょう
+    category: にんぎょう
+    color: ぴんく
+    gender: おんなのこ
+  - name: PrincessDoll
+    jname: にんぎょう
+    category: にんぎょう
+    color: ぴんく
+    gender: おんなのこ
+  - name: CatBulletTrain
+    jname: ねこのしんかんせん
+    category: のりもの
+    color: ぴんく
+    gender: おんなのこ
+  - name: HeroToy 
+    jname: ゆうしゃのフィギュア
+    category: にんぎょう
+    color: くろ
+    gender: おとこのこ

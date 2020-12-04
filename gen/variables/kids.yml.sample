@@ -1,0 +1,40 @@
+kids: 
+  - name: Taro
+    jname: たろう
+    gender: おとこのこ
+    age: 4 
+    preferences: 
+      - attribute: Color 
+        value: あか
+      - attribute: Category 
+        value: のりもの
+  - name: Jiro
+    jname: じろう
+    gender: おとこのこ
+    age: 5 
+    preferences: 
+      - attribute: Color 
+        value: くろ
+    genderBiased: true
+  - name: Yuta
+    jname: ゆうた
+    gender: おとこのこ
+    age: 7
+    preferences: 
+      - attribute: Name
+        value: けんじゅう
+  - name: Yuuko
+    jname: ゆうこ
+    gender: おんなのこ
+    age: 10 
+    preferences: 
+      - attribute: Color 
+        value: ぴんく
+    genderBiased: true
+  - name: Hinako
+    jname: ひなこ
+    gender: おんなのこ
+    age: 8
+    preferences: 
+      - attribute: Category 
+        value: にんぎょう
