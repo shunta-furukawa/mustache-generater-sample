@@ -1,11 +1,13 @@
 package kid
 
+import "../gift"
+
 // Kid represents kid.
 type Kid interface {
 	// Name returns name of the kid.
-	func Name() string,
+	Display() string
 	// Wishlist returns the kid's wishlist.
-	func Wishlist() string ,
+	Wishlist() string
 	// CanGet returns gift the kid can get.
-	func CanGet(sack []Gift) string,
+	CanGet(sack []gift.Gift) string
 }
