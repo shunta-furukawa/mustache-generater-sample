@@ -1,0 +1,13 @@
+reference: 
+  attributes: 
+#-------------------------
+kids: 
+  - name: Taro
+    jname: たろう
+    gender: おとこのこ
+    age: 4 
+    preferences: 
+      - attribute: Color 
+        value: あか
+      - attribute: Category 
+        value: のりもの

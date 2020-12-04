@@ -29,7 +29,7 @@ func (k Taro) Display() string {
 
 // Wishlist returns the kid's wishlist.
 func (k Taro) Wishlist() string {
-	return "あか" + "の" + "のりもの" + "がほしい"
+	return "あか の のりもの がほしい"
 }
 
 // CanGet returns gift the kid can get.
@@ -37,7 +37,7 @@ func (k Taro) CanGet(sack []gift.Gift) string {
 	gds := make([]string, 0)
 
 	for _, gift := range sack {
-		if gift.GetColor() == "あか" && gift.GetCategory() == "のりもの" {
+		if true && gift.GetColor() == "あか" && gift.GetCategory() == "のりもの" {
 			gds = append(gds, gift.Display())
 		}
 	}

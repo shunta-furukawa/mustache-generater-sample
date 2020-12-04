@@ -1,6 +1,6 @@
 package gift
 
-// Gift represent gift
+// Gift represents gift
 type Gift interface {
 	// Display returns name of the gift.
 	Display() string

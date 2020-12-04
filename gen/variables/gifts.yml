@@ -1,0 +1,7 @@
+#-------------------------
+gifts: 
+  - name: SportsCar
+    jname: スポーツカー
+    category: のりもの
+    color: あか
+    gender: おとこのこ

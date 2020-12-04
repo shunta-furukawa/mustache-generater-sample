@@ -1,0 +1,51 @@
+package gift
+
+import "fmt"
+
+// {{Name}} represents SportCar.
+type {{Name}} struct {
+	Name     string
+	Category string
+	Color    string
+	Gender   string
+}
+
+// New{{Name}} returns new SportCar.
+func New{{Name}}() {{Name}} {
+	return {{Name}}{
+		Name:     "{{JName}}",
+		Category: "{{Category}}",
+		Color:    "{{Color}}",
+		Gender:   "{{Gender}}",
+	}
+}
+
+// Display returns spec of SportCar.
+func (g {{Name}}) Display() string {
+	return fmt.Sprintf(`%s【%s|%s|%s向け】`,
+		g.Name,
+		g.Category,
+		g.Color,
+		g.Gender,
+	)
+}
+
+// GetName returns its name.
+func (g {{Name}}) GetName() string {
+	return g.Name
+}
+
+// GetCategory returns its category.
+func (g {{Name}}) GetCategory() string {
+	return g.Category
+}
+
+// GetGender returns its gender.
+func (g {{Name}}) GetGender() string {
+	return g.Gender
+}
+
+// GetColor returns its color.
+func (g {{Name}}) GetColor() string {
+	return g.Color
+}
