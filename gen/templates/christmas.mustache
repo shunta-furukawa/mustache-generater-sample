@@ -38,6 +38,6 @@ func main() {
 		)
 	}
 
-	fmt.Printf("\n 良いお年を... Fin.\n")
+	fmt.Printf("\n ！！！メリークリスマス ！！！\n")
 
 }
